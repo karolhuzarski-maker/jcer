@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lekka, statyczna strona startowa gotowa do publikacji przez GitHub Pages.">
+  <title>JCER — strona startowa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <header class="site-header" data-header>
+    <nav class="nav" aria-label="Główna nawigacja">
+      <a class="brand" href="#top" aria-label="JCER — strona główna">
+        <img src="assets/logo.svg" alt="" width="40" height="40">
+        <span>JCER</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu" data-nav-toggle>
+        <span class="sr-only">Otwórz menu</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="main-menu" data-nav-links>
+        <li><a href="#about">O projekcie</a></li>
+        <li><a href="#features">Funkcje</a></li>
+        <li><a href="#publish">Publikacja</a></li>
+        <li><a class="nav-cta" href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Gotowe na GitHub Pages</p>
+        <h1 id="hero-title">Prosta, szybka i responsywna strona statyczna.</h1>
+        <p class="hero-copy">Ten projekt zawiera minimalny zestaw plików bez frameworków: HTML, CSS, JavaScript oraz katalog na zasoby.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#publish">Zobacz kroki publikacji</a>
+          <a class="button secondary" href="#features">Poznaj funkcje</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Podsumowanie projektu">
+        <span class="status-dot" aria-hidden="true"></span>
+        <p class="card-label">Status</p>
+        <strong>Strona gotowa do wdrożenia</strong>
+        <ul>
+          <li>Bez procesu budowania</li>
+          <li>Przyjazna dla urządzeń mobilnych</li>
+          <li>Ulepszona dostępność</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">O projekcie</p>
+        <h2 id="about-title">Fundament pod statyczną witrynę.</h2>
+      </div>
+      <p>Repozytorium zostało przygotowane jako lekki start dla strony publikowanej bezpośrednio z GitHub Pages. Możesz rozbudować treści, dodać własne grafiki w folderze <code>assets</code> i opublikować stronę z gałęzi głównej.</p>
+    </section>
+
+    <section class="section features" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="eyebrow">Funkcje</p>
+        <h2 id="features-title">Co jest w zestawie?</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span aria-hidden="true">⚡</span>
+          <h3>Szybki start</h3>
+          <p>Pliki można hostować bez instalowania zależności i bez pipeline'u build.</p>
+        </article>
+        <article class="feature-card">
+          <span aria-hidden="true">📱</span>
+          <h3>Responsywność</h3>
+          <p>Układ dopasowuje się do ekranów telefonów, tabletów i komputerów.</p>
+        </article>
+        <article class="feature-card">
+          <span aria-hidden="true">♿</span>
+          <h3>Dostępność</h3>
+          <p>Strona ma link pomijania, semantyczne sekcje i obsługę menu z klawiatury.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section publish" id="publish" aria-labelledby="publish-title">
+      <div class="section-heading">
+        <p class="eyebrow">Publikacja</p>
+        <h2 id="publish-title">Jak uruchomić GitHub Pages?</h2>
+      </div>
+      <ol class="steps">
+        <li>W ustawieniach repozytorium otwórz sekcję <strong>Pages</strong>.</li>
+        <li>Jako źródło wybierz gałąź z tymi plikami oraz katalog główny.</li>
+        <li>Zapisz ustawienia i poczekaj na adres opublikowanej strony.</li>
+      </ol>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="contact-title">Dostosuj stronę do własnych potrzeb.</h2>
+        <p>Podmień teksty, kolory, logo i sekcje, aby stworzyć finalną wizytówkę projektu.</p>
+      </div>
+      <button class="button primary" type="button" data-scroll-top>Wróć na górę</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span data-year></span> JCER. Strona statyczna bez frameworków.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
