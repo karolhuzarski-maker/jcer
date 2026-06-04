@@ -1,0 +1,13 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo JCER</title>
+  <desc id="desc">Geometryczny znak z literą J na niebiesko-turkusowym tle.</desc>
+  <rect width="80" height="80" rx="24" fill="url(#paint0_linear)"/>
+  <path d="M47 18V48.5C47 57.06 41.06 62 32.88 62C27.62 62 23.22 59.98 20.5 56.54L26.32 50.78C27.96 52.8 29.86 53.88 32.5 53.88C36.34 53.88 38.74 51.54 38.74 47.7V18H47Z" fill="white"/>
+  <path d="M53.5 18H61.5V62H53.5V18Z" fill="white" fill-opacity="0.76"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="8" y1="10" x2="73" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+</svg>
