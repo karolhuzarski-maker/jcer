@@ -21,7 +21,7 @@
   --radius-lg: 28px;
   --radius-md: 20px;
   --radius-sm: 14px;
-  --header-height: 68px;
+  --header-height: 88px;
 }
 
 * {
@@ -125,13 +125,16 @@ a:focus-visible {
   text-decoration: none;
 }
 
+.logo img,
+.site-logo img,
+.nav-logo img,
 .brand img {
-  display: block;
+  height: 64px;
+  max-height: 64px;
   width: auto;
-  max-width: min(260px, 56vw);
-  height: auto;
-  max-height: 40px;
+  max-width: 360px;
   object-fit: contain;
+  display: block;
 }
 
 .nav-toggle {
@@ -242,9 +245,7 @@ a:focus-visible {
   overflow: hidden;
   padding-top: 0;
   padding-bottom: 0;
-  background:
-    radial-gradient(circle at top right, rgba(17, 167, 181, 0.18), transparent 34%),
-    linear-gradient(180deg, var(--white) 0%, var(--light-bg) 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #F6F8FB 55%, #EAF8FA 100%);
 }
 
 .hero-grid,
@@ -253,11 +254,17 @@ a:focus-visible {
   gap: 32px;
 }
 
+.hero .container,
+.hero-container,
 .hero-grid {
   max-width: 1180px;
   width: 100%;
   margin: 0 auto;
-  padding: 56px 24px 64px;
+  padding: 72px 32px 80px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 48px;
+  align-items: center;
 }
 
 .eyebrow {
@@ -299,6 +306,13 @@ h1 {
   font-size: clamp(2.35rem, 9vw, 4.6rem);
   line-height: 1.05;
   letter-spacing: -0.04em;
+}
+
+.hero h1 {
+  font-size: clamp(2.3rem, 4.1vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  max-width: 720px;
 }
 
 h2 {
@@ -373,8 +387,9 @@ h3 {
 .hero-card {
   position: relative;
   width: 100%;
-  max-width: 420px;
-  margin-inline: auto;
+  max-width: 380px;
+  justify-self: end;
+  box-sizing: border-box;
   padding: 22px;
   overflow: hidden;
 }
@@ -679,12 +694,7 @@ h3 {
 
 @media (min-width: 760px) {
   :root {
-    --header-height: 72px;
-  }
-
-  .brand img {
-    max-width: min(260px, 34vw);
-    max-height: 48px;
+    --header-height: 88px;
   }
 
   h1 {
@@ -720,16 +730,15 @@ h3 {
   }
 }
 
-@media (min-width: 900px) {
+@media (max-width: 979px) {
+  .hero .container,
+  .hero-container,
   .hero-grid {
-    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
-    gap: 48px;
-    align-items: center;
-    padding: 72px 24px 80px;
+    grid-template-columns: 1fr;
   }
 
   .hero-card {
-    justify-self: end;
+    justify-self: center;
   }
 }
 
@@ -766,16 +775,14 @@ h3 {
 
 
 @media (max-width: 899px) {
-  h1 {
-    font-size: clamp(2.3rem, 8vw, 2.7rem);
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 2.6rem);
   }
 
+  .hero .container,
+  .hero-container,
   .hero-grid {
     padding: 48px 20px 56px;
-  }
-
-  .hero-card {
-    margin-inline: auto;
   }
 }
 
@@ -793,21 +800,28 @@ h3 {
   }
 }
 
+@media (max-width: 759px) {
+  .logo img,
+  .site-logo img,
+  .nav-logo img,
+  .brand img {
+    height: 46px;
+    max-height: 46px;
+    max-width: 220px;
+  }
+}
+
 @media (max-width: 380px) {
   .container {
     width: min(100% - 28px, 1180px);
   }
 
-  .brand img {
-    max-width: min(196px, 58vw);
-    max-height: 38px;
-  }
-
-
   .section {
     padding: 48px 0;
   }
 
+  .hero .container,
+  .hero-container,
   .hero-grid {
     padding: 42px 20px 52px;
   }
