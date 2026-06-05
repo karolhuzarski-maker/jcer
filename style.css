@@ -125,18 +125,6 @@ a:focus-visible {
   text-decoration: none;
 }
 
-.logo img,
-.site-logo img,
-.nav-logo img,
-.brand img {
-  height: 64px;
-  max-height: 64px;
-  width: auto;
-  max-width: 360px;
-  object-fit: contain;
-  display: block;
-}
-
 .nav-toggle {
   position: absolute;
   width: 1px;
@@ -844,5 +832,57 @@ h3 {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+}
+
+.brand-logo {
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  text-decoration: none !important;
+}
+
+.brand-logo-img {
+  display: block !important;
+  width: auto !important;
+  height: 72px !important;
+  max-height: 72px !important;
+  max-width: 420px !important;
+  object-fit: contain !important;
+}
+
+.site-header,
+.navbar,
+.header,
+.main-header {
+  min-height: 96px !important;
+}
+
+.nav-container,
+.navbar-container,
+.header-container {
+  min-height: 96px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+@media (max-width: 768px) {
+  .brand-logo-img {
+    height: 52px !important;
+    max-height: 52px !important;
+    max-width: 260px !important;
+  }
+
+  .site-header,
+  .navbar,
+  .header,
+  .main-header {
+    min-height: 76px !important;
+  }
+
+  .nav-container,
+  .navbar-container,
+  .header-container {
+    min-height: 76px !important;
   }
 }
