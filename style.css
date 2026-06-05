@@ -1100,3 +1100,133 @@ header,
     padding-bottom: 48px !important;
   }
 }
+
+/* === JCER FINAL VISUAL OVERRIDE === */
+
+/* LOGO / NAVBAR */
+.jcer-logo-img,
+.jcer-brand-img,
+.brand-logo img,
+.jcer-brand img,
+.site-logo img,
+.nav-logo img,
+.logo img {
+  display: block !important;
+  width: auto !important;
+  height: 122px !important;
+  max-height: 122px !important;
+  max-width: 620px !important;
+  object-fit: contain !important;
+}
+
+.jcer-header,
+.site-header,
+.navbar,
+.main-header,
+header {
+  min-height: 142px !important;
+  height: auto !important;
+}
+
+.jcer-header-inner,
+.nav-container,
+.header-container,
+.navbar-container {
+  min-height: 142px !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* CARD / BLOCK TEXT READABILITY */
+.package-card p,
+.pricing-card p,
+.card p,
+.info-card p,
+.box p,
+.hero-card p,
+.program-card p,
+.checklist-card,
+.checklist-card span,
+.package-description,
+.card-description,
+.check-item {
+  font-size: 1.08rem !important;
+  line-height: 1.7 !important;
+  color: #40516A !important;
+}
+
+.package-card small,
+.card small,
+.card-meta,
+.package-meta,
+.kicker,
+.eyebrow {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.program-grid .card,
+.program-checklist .card,
+.program-list .card,
+.check-item {
+  font-size: 1.06rem !important;
+  line-height: 1.55 !important;
+  font-weight: 600 !important;
+}
+
+.hero p,
+.hero-subtitle,
+.section-intro,
+.section-description {
+  font-size: 1.1rem !important;
+  line-height: 1.75 !important;
+  max-width: 760px !important;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .jcer-logo-img,
+  .jcer-brand-img,
+  .brand-logo img,
+  .jcer-brand img,
+  .site-logo img,
+  .nav-logo img,
+  .logo img {
+    height: 78px !important;
+    max-height: 78px !important;
+    max-width: 340px !important;
+  }
+
+  .jcer-header,
+  .site-header,
+  .navbar,
+  .main-header,
+  header {
+    min-height: 96px !important;
+  }
+
+  .jcer-header-inner,
+  .nav-container,
+  .header-container,
+  .navbar-container {
+    min-height: 96px !important;
+  }
+
+  .package-card p,
+  .pricing-card p,
+  .card p,
+  .info-card p,
+  .box p,
+  .hero-card p,
+  .program-card p,
+  .checklist-card,
+  .checklist-card span,
+  .package-description,
+  .card-description,
+  .check-item {
+    font-size: 1.02rem !important;
+    line-height: 1.65 !important;
+  }
+}
