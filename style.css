@@ -944,3 +944,108 @@ header,
     min-height: 82px !important;
   }
 }
+
+/* === JCER HEADER FINAL OVERRIDE === */
+
+.jcer-header {
+  width: 100% !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #DCE3EC !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+}
+
+.jcer-header-inner {
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  padding: 18px 32px !important;
+  min-height: 128px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 40px !important;
+  box-sizing: border-box !important;
+}
+
+.jcer-logo-link {
+  display: flex !important;
+  align-items: center !important;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  height: auto !important;
+  text-decoration: none !important;
+}
+
+.jcer-logo-img {
+  display: block !important;
+  height: 108px !important;
+  max-height: 108px !important;
+  width: auto !important;
+  max-width: 560px !important;
+  object-fit: contain !important;
+}
+
+.jcer-nav {
+  display: flex !important;
+  align-items: center !important;
+  gap: 28px !important;
+  font-weight: 800 !important;
+  color: #0C3B82 !important;
+  white-space: nowrap !important;
+}
+
+.jcer-nav a {
+  color: #0C3B82 !important;
+  text-decoration: none !important;
+  font-size: 1rem !important;
+}
+
+.jcer-nav a:hover,
+.jcer-nav a.active {
+  color: #11A7B5 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+}
+
+.jcer-lang {
+  display: inline-flex !important;
+  gap: 8px !important;
+  align-items: center !important;
+}
+
+@media (max-width: 900px) {
+  .jcer-header-inner {
+    min-height: 96px !important;
+    padding: 14px 20px !important;
+    gap: 20px !important;
+  }
+
+  .jcer-logo-img {
+    height: 76px !important;
+    max-height: 76px !important;
+    max-width: 340px !important;
+  }
+
+  .jcer-nav {
+    gap: 16px !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .jcer-header-inner {
+    min-height: 88px !important;
+    padding: 12px 16px !important;
+  }
+
+  .jcer-logo-img {
+    height: 68px !important;
+    max-height: 68px !important;
+    max-width: 260px !important;
+  }
+
+  .jcer-nav {
+    display: none !important;
+  }
+}

@@ -32,7 +32,7 @@
   <link rel="alternate" hreflang="x-default" href="https://www.jcer.pl/" />
   <!-- Wersja angielska /en/ zostanie dodana później jako osobna strona /en/index.html. -->
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=10">
 
   <script type="application/ld+json">
   {
@@ -59,33 +59,20 @@
 <body>
   <a class="skip-link" href="#main">Przejdź do treści</a>
 
-  <header class="site-header" id="top">
-    <nav class="nav container nav-container" aria-label="Główna nawigacja">
-      <a href="./" class="jcer-brand">
-        <img src="assets/logo-horizontal.png" alt="Jagiellońskie Centrum Edukacji Ratunkowej — logo" class="jcer-brand-img">
+  <header class="jcer-header">
+    <div class="jcer-header-inner">
+      <a class="jcer-logo-link" href="./" aria-label="Jagiellońskie Centrum Edukacji Ratunkowej">
+        <img class="jcer-logo-img" src="assets/logo-horizontal.png" alt="Jagiellońskie Centrum Edukacji Ratunkowej — logo">
       </a>
 
-      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Otwórz lub zamknij menu" />
-      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-
-      <div class="nav-panel" id="nav-panel">
-        <ul class="nav-list">
-          <li><a href="#pakiety">Oferta</a></li>
-          <li><a href="#program">Program</a></li>
-          <li><a href="#instruktor">Instruktor</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-        <div class="language-switch" aria-label="Przełącznik językowy">
-          <a class="is-active" href="./" aria-current="page">PL</a>
-          <span aria-hidden="true">|</span>
-          <a href="en/">EN</a>
-        </div>
-      </div>
-    </nav>
+      <nav class="jcer-nav" aria-label="Nawigacja główna">
+        <a href="#oferta">Oferta</a>
+        <a href="#program">Program</a>
+        <a href="#instruktor">Instruktor</a>
+        <a href="#kontakt">Kontakt</a>
+        <span class="jcer-lang"><a class="active" href="./">PL</a> <span>|</span> <a href="en/">EN</a></span>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
