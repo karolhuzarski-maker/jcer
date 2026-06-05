@@ -886,3 +886,61 @@ h3 {
     min-height: 76px !important;
   }
 }
+
+/* FORCE JCER NAVBAR LOGO SIZE */
+.jcer-brand {
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  text-decoration: none !important;
+}
+
+.jcer-brand-img {
+  display: block !important;
+  width: auto !important;
+  height: 82px !important;
+  max-height: 82px !important;
+  max-width: 440px !important;
+  object-fit: contain !important;
+}
+
+header,
+.site-header,
+.navbar,
+.main-header {
+  min-height: 108px !important;
+  height: auto !important;
+}
+
+.nav-container,
+.header-container,
+.navbar-container {
+  min-height: 108px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+
+@media (max-width: 768px) {
+  .jcer-brand-img {
+    height: 56px !important;
+    max-height: 56px !important;
+    max-width: 280px !important;
+  }
+
+  header,
+  .site-header,
+  .navbar,
+  .main-header {
+    min-height: 82px !important;
+  }
+
+  .nav-container,
+  .header-container,
+  .navbar-container {
+    min-height: 82px !important;
+  }
+}
