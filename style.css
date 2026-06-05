@@ -1049,3 +1049,54 @@ header,
     display: none !important;
   }
 }
+
+/* === JCER HERO FINAL OVERRIDE === */
+
+.hero h1 {
+  font-size: clamp(2.1rem, 3.6vw, 3.6rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.035em !important;
+  max-width: 760px !important;
+  margin-bottom: 24px !important;
+}
+
+.hero .container,
+.hero-container {
+  padding-top: 56px !important;
+  padding-bottom: 64px !important;
+}
+
+.hero p,
+.hero-subtitle {
+  font-size: 1.05rem !important;
+  line-height: 1.7 !important;
+  max-width: 680px !important;
+  color: #40516A !important;
+}
+
+.hero-eyebrow {
+  font-size: 0.86rem !important;
+  line-height: 1.35 !important;
+  color: #0C3B82 !important;
+  margin-bottom: 14px !important;
+}
+
+.hero-card,
+.practice-card {
+  max-width: 380px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: clamp(1.9rem, 8vw, 2.5rem) !important;
+    line-height: 1.1 !important;
+  }
+
+  .hero .container,
+  .hero-container {
+    padding-top: 40px !important;
+    padding-bottom: 48px !important;
+  }
+}
