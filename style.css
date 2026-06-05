@@ -788,6 +788,17 @@ h3 {
   }
 }
 
+@media (max-width: 759px) {
+  .logo img,
+  .site-logo img,
+  .nav-logo img,
+  .brand img {
+    height: 46px;
+    max-height: 46px;
+    max-width: 220px;
+  }
+}
+
 @media (max-width: 380px) {
   .container {
     width: min(100% - 28px, 1180px);
