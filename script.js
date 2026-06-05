@@ -6,8 +6,6 @@
   const navToggle = document.getElementById('nav-toggle');
   const navPanel = document.getElementById('nav-panel');
   const navLinks = document.querySelectorAll('.nav-panel a');
-  const brandLogo = document.querySelector('.brand-logo');
-  const brandFallback = document.querySelector('.brand-fallback');
   const footerLogo = document.querySelector('.footer-brand img');
 
   function setMenuState(isOpen) {
@@ -38,14 +36,6 @@
       setMenuState(false);
     }
   });
-
-  // Logo fallback: jeśli placeholder logo nie istnieje jeszcze w /assets/, pokazujemy tekstową identyfikację JCER.
-  if (brandLogo && brandFallback) {
-    brandLogo.addEventListener('error', function () {
-      brandLogo.style.display = 'none';
-      brandFallback.style.display = 'inline-flex';
-    });
-  }
 
   if (footerLogo) {
     footerLogo.addEventListener('error', function () {
