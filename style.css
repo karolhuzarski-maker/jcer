@@ -312,6 +312,12 @@ h2 {
   font-size: clamp(1.9rem, 6vw, 3rem);
 }
 
+.instructor-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
 h3 {
   margin-bottom: 10px;
   font-size: 1.25rem;
@@ -871,6 +877,11 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .instructor-title {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
   .brand-logo-img {
     height: 52px !important;
     max-height: 52px !important;
