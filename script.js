@@ -6,6 +6,7 @@
   const navToggle = document.getElementById('nav-toggle');
   const navPanel = document.getElementById('nav-panel');
   const navLinks = document.querySelectorAll('.nav-panel a');
+  const logoLink = document.querySelector('.jcer-logo-link');
   const footerLogo = document.querySelector('.footer-brand img');
 
   function setMenuState(isOpen) {
@@ -36,6 +37,26 @@
       setMenuState(false);
     }
   });
+
+  function normalizePath(path) {
+    return path.replace(/\/index\.html$/, '/');
+  }
+
+  if (logoLink) {
+    logoLink.addEventListener('click', function (event) {
+      const currentPath = normalizePath(window.location.pathname);
+      const logoPath = normalizePath(new URL(logoLink.href).pathname);
+      const isCurrentPageLogoTarget = window.location.origin === new URL(logoLink.href).origin && currentPath === logoPath;
+
+      if (isCurrentPageLogoTarget) {
+        event.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        });
+      }
+    });
+  }
 
   if (footerLogo) {
     footerLogo.addEventListener('error', function () {
