@@ -38,6 +38,7 @@ section[id] {
 }
 
 body {
+  position: relative;
   margin: 0;
   overflow-x: hidden;
   color: var(--text);
@@ -46,6 +47,24 @@ body {
   font-size: 16px;
   line-height: 1.65;
   text-rendering: optimizeLegibility;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("assets/logo-circle.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 11vw) 52%;
+  background-size: min(62vw, 760px) auto;
+  opacity: 0.045;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
 }
 
 body.is-nav-open {
@@ -877,6 +896,12 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  body::before {
+    background-position: center 35%;
+    background-size: 118vw auto;
+    opacity: 0.035;
+  }
+
   .instructor-title {
     font-size: 2rem;
     line-height: 1.15;
