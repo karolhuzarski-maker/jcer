@@ -32,7 +32,7 @@
   <link rel="alternate" hreflang="x-default" href="https://www.jcer.pl/" />
   <!-- Wersja angielska /en/ zostanie dodana później jako osobna strona /en/index.html. -->
 
-  <link rel="stylesheet" href="style.css?v=20">
+  <link rel="stylesheet" href="style.css?v=21">
 
   <script type="application/ld+json">
   {
@@ -80,14 +80,14 @@
       <div class="container hero-grid">
         <div class="hero-content">
           <p class="eyebrow hero-eyebrow">Szkolenia pierwszej pomocy · Kraków i Małopolska</p>
+          <h1>Szkolenia BLS/AED i pierwszej pomocy dla firm w Krakowie i Małopolsce</h1>
           <p class="hero-lead">Praktyczne szkolenia dla pracowników, zespołów, szkół, organizacji i instytucji z Krakowa i Małopolski. RKO, AED, zadławienia, nagłe stany i podstawowe urazy — konkretnie, praktycznie i bez zbędnej teorii.</p>
-          <p class="contact-line">
+          <div class="hero-actions" aria-label="Szybki kontakt i oferta">
             <!-- Telefon i e-mail: zaktualizuj tutaj oraz w sekcji Kontakt, stopce i JSON-LD. -->
-            Kontakt:
-            <a href="tel:+48512503640">512 503 640</a>
-            <span aria-hidden="true">·</span>
-            <a href="mailto:kontakt@jcer.pl">kontakt@jcer.pl</a>
-          </p>
+            <a class="btn btn-primary" href="tel:+48512503640">Zadzwoń: 512 503 640</a>
+            <a class="btn btn-secondary" href="mailto:kontakt@jcer.pl">kontakt@jcer.pl</a>
+            <a class="btn btn-ghost" href="#oferta">Zobacz ofertę</a>
+          </div>
           <ul class="badges" aria-label="Kwalifikacje instruktora">
             <li>Ratownik medyczny</li>
             <li>EMS</li>
@@ -106,7 +106,12 @@
             <div class="dashboard-tile"><img src="2.png" alt="Szkolenie AED"></div>
             <div class="dashboard-tile"><img src="5.png" alt="RKO"></div>
             <div class="dashboard-tile"><img src="4.png" alt="Numer alarmowy 112"></div>
-            <div class="dashboard-tile is-wide"><span>Certyfikat</span></div>
+          </div>
+          <div class="hero-stats" aria-label="Parametry szkolenia">
+            <span><strong>do 12</strong> osób</span>
+            <span><strong>3–6</strong> godzin</span>
+            <span><strong>certyfikat</strong></span>
+            <span><strong>Kraków</strong> / Małopolska</span>
           </div>
           <p class="hero-card-note">BLS AED dla pracowników, kurs AED dla firm i praktyczna pierwsza pomoc dla firm Kraków — w czytelnym, ćwiczeniowym formacie.</p>
         </div>
@@ -217,13 +222,15 @@
         </div>
 
         <div class="contact-grid">
-          <article class="contact-card">
+          <article class="contact-card contact-card-link">
+            <a class="contact-card-hit" href="tel:+48512503640" aria-label="Zadzwoń pod numer 512 503 640"></a>
             <span class="contact-icon" aria-hidden="true">☎</span>
             <h3>Telefon</h3>
             <p>512 503 640</p>
             <a href="tel:+48512503640">tel:+48512503640</a>
           </article>
-          <article class="contact-card">
+          <article class="contact-card contact-card-link">
+            <a class="contact-card-hit" href="mailto:kontakt@jcer.pl" aria-label="Napisz e-mail do JCER"></a>
             <span class="contact-icon" aria-hidden="true">@</span>
             <h3>E-mail</h3>
             <p>kontakt@jcer.pl</p>
